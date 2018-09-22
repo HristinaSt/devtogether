@@ -4,7 +4,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('../img/showcase.jpg') no-repeat;
+  background: url("../img/showcase.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,4 +36,23 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .dark-overlay {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .latest-profiles-img,
+  .dark-overlay,
+  .landing-inner,
+  .landing {
+    width: 100%;
+  }
 }

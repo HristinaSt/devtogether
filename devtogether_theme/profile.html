@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <title>Welcome to Developers Together</title>
@@ -14,32 +18,23 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="landing.html">DevTogether</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mobile-nav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="profiles.html"> Developers
-            </a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="register.html">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-        </ul>
-      </div>
+  <div class="ui  grey stackable inverted  massive menu">
+    <a class="active item" href="landing.html">
+      <i class="home icon"></i> Home
+    </a>
+    <a class="item" href="profiles.html">
+      <i class="user icon"></i> Developers
+    </a>
+    <div class="right menu">
+      <a class="item" href="register.html">
+        Sign up
+      </a>
+      <a class="item" href="login.html">
+        Login in
+      </a>
     </div>
-  </nav>
+  </div>
+
 
   <!-- Profile -->
   <div class="profile">
@@ -61,12 +56,13 @@
               <div class="card card-body bg-info text-white mb-3">
                 <div class="row">
                   <div class="col-4 col-md-3 m-auto">
-                    <img class="rounded-circle" src="https://s.gravatar.com/avatar/63a33c41f284f6705e271d2925a97401?s=200" alt="" />
+                    <img class="rounded-circle" src="https://s.gravatar.com/avatar/63a33c41f284f6705e271d2925a97401?s=200"
+                      alt="" />
                   </div>
                 </div>
                 <div class="text-center">
                   <h1 class="display-4 text-center">Hristina Stojanoska</h1>
-                  <p class="lead text-center">Developer at Microsoft</p>
+                  <p class="lead text-center">Student at FIKT</p>
                   <p>Prilep, Macedonia</p>
                   <p>
                     <a class="text-white p-2" href="#">
@@ -95,8 +91,10 @@
             <div class="col-md-12">
               <div class="card card-body bg-light mb-3">
                 <h3 class="text-center text-info">Hristina's Bio</h3>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fuga cum necessitatibus blanditiis vel,
-                  officia facere porro esse numquam assumenda doloremque saepe aliquam nemo excepturi aliquid maiores! Excepturi,
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fuga cum
+                  necessitatibus blanditiis vel,
+                  officia facere porro esse numquam assumenda doloremque saepe aliquam nemo excepturi aliquid maiores!
+                  Excepturi,
                   libero repudiandae.
                 </p>
                 <hr />
@@ -126,25 +124,28 @@
               <ul class="list-group">
                 <li class="list-group-item">
                   <h4>Microsoft</h4>
-                  <p>Oct 2014 - Current</p>
+                  <p>Oct 2016 - Current</p>
                   <p>
                     <strong>Position:</strong> Senior Developer
                   </p>
                   <p>
-                    <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus dicta enim
+                    <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                    doloribus dicta enim
                     excepturi laborum voluptatem nam provident quisquam facere. Quae?</p>
                 </li>
                 <li class="list-group-item">
-                  <h4>Sun Microsystems</h4>
-                  <p>Oct 2004 - Nov 2011</p>
+                  <h4> Microsystems</h4>
+                  <p>Oct 2014 - Jun 2016</p>
                   <p>
                     <strong>Position: </strong> Systems Admin</p>
                   <p>
                     <p>
-                      <strong>Location: </strong> Miami, FL
+                      <strong>Location: </strong> Prilep, Macedonia
                     </p>
-                    <strong>Description: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus dicta
-                    enim excepturi laborum voluptatem nam provident quisquam facere. Quae?</p>
+                    <strong>Description: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                    doloribus dicta
+                    enim excepturi laborum voluptatem nam provident quisquam facere. Quae?
+                  </p>
                 </li>
               </ul>
             </div>
@@ -155,12 +156,13 @@
                   <h4>Univeresity "Kliment Ohridski" -Bitola</h4>
                   <p>Sep 2014 - June 2018</p>
                   <p>
-                    <strong>Degree: </strong>Masters</p>
+                    <strong>Degree: </strong>Bachelor of Computer Science</p>
                   <p>
                     <strong>Field Of Study: </strong>Computer Science</p>
                   <p>
                     <p>
-                      <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus dicta
+                      <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                      doloribus dicta
                       enim excepturi laborum voluptatem nam provident quisquam facere. Quae?</p>
                 </li>
               </ul>
