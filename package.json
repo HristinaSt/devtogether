@@ -22,16 +22,24 @@
     "file-loader": "^2.0.0",
     "gravatar": "^1.6.0",
     "heroku": "^7.16.0",
+    "hoek": "^5.0.4",
     "jsonwebtoken": "^8.3.0",
-    "laravel-mix": "^1.4.2",
+    "laravel-mix": "^2.1.14",
+    "lodash": "^4.17.11",
+    "lodash.update": "^4.10.2",
+    "minimatch": "^3.0.4",
     "moment": "^2.22.2",
     "mongoose": "^5.2.15",
     "npm-demo-pkg": "^2.0.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
     "semantic": "0.0.1",
     "semantic-ui": "^2.4.0",
     "semantic-ui-css": "^2.3.3",
@@ -40,6 +48,7 @@
     "yarn": "^1.9.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "redux-devtools": "^3.4.1"
   }
 }

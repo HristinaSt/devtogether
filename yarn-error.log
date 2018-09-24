@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add [package]@[tag]
+  C:\Program Files\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\stoja\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files;C:\Program Files (x86)\Yarn\bin;C:\ProgramData\chocolatey\bin;C:\Users\stoja\AppData\Local\Microsoft\WindowsApps;C:\Users\stoja\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\stoja\AppData\Roaming\npm;C:\Users\stoja\AppData\Local\Yarn\bin
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\stoja\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files;C:\Program Files (x86)\Yarn\bin;C:\ProgramData\chocolatey\bin;C:\Users\stoja\AppData\Local\Microsoft\WindowsApps;C:\Users\stoja\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\stoja\AppData\Roaming\npm;C:\Users\stoja\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
 
 Yarn version: 
   1.9.4
@@ -14,17 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/[package]: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:64202:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:137468:22)
-      at Request.emit (events.js:182:13)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:138440:10)
-      at Request.emit (events.js:182:13)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:138362:12)
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-alpha.18.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:138095:19)
       at Object.onceWrapper (events.js:273:13)
-      at IncomingMessage.emit (events.js:187:15)
-      at endReadableNT (_stream_readable.js:1092:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:661:40)
+      at Object.onceWrapper (events.js:273:13)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket.Socket._onTimeout (net.js:449:8)
+      at ontimeout (timers.js:425:11)
+      at tryOnTimeout (timers.js:289:5)
+      at listOnTimeout (timers.js:252:5)
 
 npm manifest: 
   {
@@ -33,23 +33,36 @@ npm manifest:
     "description": "Best social network for developers",
     "main": "server.js",
     "scripts": {
+      "client-install": "npm install --prefix client",
       "start": "node server.js",
       "server": "nodemon server.js",
-      "client-install": "npm install --prefix client",
-      "dev": "concurrently \"npm run server\" \"npm run client\""
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
     },
     "author": "Hristina Stojanoska",
     "license": "MIT",
     "dependencies": {
+      "@semantic-ui-react/event-stack": "^2.0.0",
       "bcryptjs": "^2.4.3",
       "body-parser": "^1.18.3",
+      "concurrently": "^4.0.1",
       "express": "^4.16.3",
+      "file-loader": "^2.0.0",
       "gravatar": "^1.6.0",
+      "heroku": "^7.16.0",
       "jsonwebtoken": "^8.3.0",
+      "laravel-mix": "^1.4.2",
+      "moment": "^2.22.2",
       "mongoose": "^5.2.15",
+      "npm-demo-pkg": "^2.0.0",
       "passport": "^0.4.0",
       "passport-jwt": "^4.0.0",
-      "semantic-ui": "^2.3.3",
+      "react": "^16.5.1",
+      "react-dom": "^16.5.1",
+      "react-router-dom": "^4.3.1",
+      "semantic": "0.0.1",
+      "semantic-ui": "^2.4.0",
       "semantic-ui-css": "^2.3.3",
       "semantic-ui-react": "^0.82.5",
       "validator": "^10.7.1",
