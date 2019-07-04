@@ -9,7 +9,9 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Hristina Stojanoska",
   "license": "MIT",
@@ -53,7 +55,8 @@
     "semantic-ui-react": "^0.82.5",
     "validator": "^10.7.1",
     "vee-validate": "^2.0.3",
-    "yarn": "^1.9.4"
+    "yarn": "^1.9.4",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -69,5 +72,6 @@
     "npm-dependency-analyzer": "^0.7.0",
     "redux-devtools": "^3.4.1",
     "upgrade-dependents": "^1.1.0"
-  }
+  },
+  "snyk": true
 }
