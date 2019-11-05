@@ -33,7 +33,7 @@
     "lodash.update": "^4.10.2",
     "minimatch": "^3.0.4",
     "moment": "^2.22.2",
-    "mongoose": "^5.2.15",
+    "mongoose": "^5.7.5",
     "npm-demo-pkg": "^2.0.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
