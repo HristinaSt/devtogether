@@ -29,7 +29,7 @@
     "jsonwebtoken": "^8.3.0",
     "laravel-mix": "^2.1.14",
     "latest-version": "^4.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "lodash.update": "^4.10.2",
     "minimatch": "^3.0.4",
     "moment": "^2.22.2",
